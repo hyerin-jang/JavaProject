@@ -3,12 +3,10 @@ package inflearn.string;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/* N개의 단어가 주어지면 각 단어를 뒤집어 출력하는 프로그램을 작성하세요. (3<N<=20)
-* */
 public class Palindrome {
-    public ArrayList<String> Solution (int num, String[] str) {
+    public ArrayList<String> Solution(int num, String[] str) {
         ArrayList<String> result = new ArrayList<>();
-        for(String x : str) {
+        for (String x : str) {
             String tmp = new StringBuilder(x).reverse().toString();
             result.add(tmp);
 
@@ -26,11 +24,12 @@ public class Palindrome {
         }
         return result;
     }
-    public static void main (String[] args) {
+
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int num = input.nextInt();
         String[] str = new String[num];
-        for(int i=0; i<num; i++) {
+        for (int i = 0; i < num; i++) {
             str[i] = input.next();
         }
 

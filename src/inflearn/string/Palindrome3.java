@@ -3,10 +3,10 @@ package inflearn.string;
 import java.util.*;
 
 public class Palindrome3 {
-    public String solution(String str){
-        String answer="NO";
-        String tmp=new StringBuilder(str).reverse().toString();
-        if(str.equalsIgnoreCase(tmp)) answer="YES";
+    public String solution(String str) {
+        String answer = "NO";
+        String tmp = new StringBuilder(str).reverse().toString();
+        if (str.equalsIgnoreCase(tmp)) answer = "YES";
 
 //        String answer="YES";
 //        str=str.toUpperCase();
@@ -18,10 +18,10 @@ public class Palindrome3 {
         return answer;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Palindrome3 T = new Palindrome3();
         Scanner kb = new Scanner(System.in);
-        String str=kb.next();
+        String str = kb.next();
         System.out.print(T.solution(str));
     }
 }
