@@ -43,3 +43,4 @@ public class Lotto {
  *
  * >> 의문점
  * - 과연 stream을 쓰는게 괜찮을까? 그냥 for문을 쓰는게 나았을까?
+ */
