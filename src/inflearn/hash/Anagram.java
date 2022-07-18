@@ -3,33 +3,25 @@ package inflearn.hash;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Hash {
-    public char solution(int n, String s) {
-        char answer = ' ';
-        HashMap<Character, Integer> map = new HashMap<>();
-        for (char x : s.toCharArray()) {
-            map.put(x, map.getOrDefault(x, 0) + 1);
+public class Anagram {
+    public String solution(String s1, String s2){
+        String answer="YES";
+        HashMap<Character, Integer> map=new HashMap<>();
+        for(char x : s1.toCharArray()){
+            map.put(x, map.getOrDefault(x, 0)+1);
         }
-        //System.out.println(map.containsKey('F'));
-        //System.out.println(map.size());
-        //System.out.println(map.remove('C'));
-
-        int max = Integer.MIN_VALUE;
-        for (char key : map.keySet()) {
-            //System.out.println(key+" "+map.get(key));
-            if (map.get(key) > max) {
-                max = map.get(key);
-                answer = key;
-            }
+        for(char x : s2.toCharArray()){
+            if(!map.containsKey(x) || map.get(x)==0) return "NO";
+            map.put(x, map.get(x)-1);
         }
         return answer;
     }
 
-    public static void main(String[] args) {
-        Hash T = new Hash();
+    public static void main(String[] args){
+        Anagram T = new Anagram();
         Scanner kb = new Scanner(System.in);
-        int n = kb.nextInt();
-        String str = kb.next();
-        System.out.println(T.solution(n, str));
+        String a=kb.next();
+        String b=kb.next();
+        System.out.print(T.solution(a, b));
     }
 }
