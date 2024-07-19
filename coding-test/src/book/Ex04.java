@@ -1,9 +1,9 @@
-package programmers;
+package book;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Exam {
+public class Ex04 {
     // 12345
     // 21232425 / 21232425
     // 3311224455/ 3311224455

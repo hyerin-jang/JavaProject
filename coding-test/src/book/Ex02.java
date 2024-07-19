@@ -1,9 +1,9 @@
-package programmers;
+package book;
 
 import java.util.Arrays;
 import java.util.Collections;
 
-public class ArrayControl {
+public class Ex02 {
     public static void main(String[] args) {
         int[] arr = {4, 2, 2, 1, 3, 4};
 
