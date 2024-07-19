@@ -22,5 +22,4 @@ public class SameNumNo {
 
         System.out.println(Arrays.toString(answer));
     }
-
 }
