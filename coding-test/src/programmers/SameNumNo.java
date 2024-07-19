@@ -8,8 +8,8 @@ public class SameNumNo {
         int[] arr = {1, 2, 2, 3, 4, 4};
         Stack<Integer> stack = new Stack<>();
 
-        for(int i : arr){
-            if(stack.isEmpty() || stack.peek() != i){
+        for (int i : arr) {
+            if (stack.isEmpty() || stack.peek() != i) {
                 stack.push(i);
             }
         }
