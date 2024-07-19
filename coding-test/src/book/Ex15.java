@@ -14,8 +14,6 @@ public class Ex15 {
         int[] daysLeft = new int[progresses.length];
         for (int i = 0; i < speeds.length; i++) {
             daysLeft[i] = (int) Math.ceil((100.0 - progresses[i]) / speeds[i]);
-
-
         }
 
         int count = 0;
